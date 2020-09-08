@@ -1,6 +1,6 @@
 const { balanced, evaluatePostfix } = require('../lib/problems');
 
-describe.skip("test wave 3 problems", () => {
+describe("test wave 3 problems", () => {
     describe("balanced", () => {
         it('should return true given balanced strings', () => {
             expect(balanced('(({}))')).toEqual(true);
