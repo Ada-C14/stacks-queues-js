@@ -1,6 +1,6 @@
 const Queue = require("../lib/queue");
 
-describe.skip("test queue implementation", () => {
+describe("test queue implementation", () => {
     it("creates a queue", () => {
         const q = new Queue();
         expect(q).toBeInstanceOf(Queue);
