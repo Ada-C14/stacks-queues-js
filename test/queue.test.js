@@ -52,7 +52,7 @@ describe("test queue implementation", () => {
         expect(q.toString()).toEqual("[3,7]");
     });
 
-    it.skip('properly adjusts size with enqueueing and dequeueing', () => {
+    it('properly adjusts size with enqueueing and dequeueing', () => {
         const q = new Queue();
         expect(q.isEmpty()).toEqual(true);
         q.enqueue(-1);
@@ -63,7 +63,7 @@ describe("test queue implementation", () => {
         expect(q.isEmpty()).toEqual(true);
     });
 
-    it.skip('returns the front element of the queue', () => {
+    it('returns the front element of the queue', () => {
         const q = new Queue();
         q.enqueue(40);
         q.enqueue(22);
@@ -72,7 +72,7 @@ describe("test queue implementation", () => {
         expect(q.dequeue()).toEqual(22);
     });
 
-    it.skip('works with a large queue', () => {
+    it('works with a large queue', () => {
         const q = new Queue();
         q.enqueue(10);
         q.enqueue(20);
