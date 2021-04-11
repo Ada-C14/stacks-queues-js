@@ -26,21 +26,21 @@ describe("test wave 3 problems", () => {
         });
     });
 
-    describe("postfix", () => {
-        it('can add 2 numbers together', () => {
-            expect(evaluatePostfix('34+')).toEqual(7);
-            expect(evaluatePostfix('34*')).toEqual(12);
-            expect(evaluatePostfix('34-')).toEqual(-1);
-            expect(evaluatePostfix('34/')).toEqual(0);
-        });
+    // describe("postfix", () => {
+    //     it('can add 2 numbers together', () => {
+    //         expect(evaluatePostfix('34+')).toEqual(7);
+    //         expect(evaluatePostfix('34*')).toEqual(12);
+    //         expect(evaluatePostfix('34-')).toEqual(-1);
+    //         expect(evaluatePostfix('34/')).toEqual(0);
+    //     });
 
-        it('can evaluate a more complicated expression', () => {
-            expect(evaluatePostfix('34+2*')).toEqual(14);
-            expect(evaluatePostfix('34*2/')).toEqual(6);
-            expect(evaluatePostfix('34-1+')).toEqual(0);
-            expect(evaluatePostfix('34/7-')).toEqual(-7);
-            expect(evaluatePostfix('35+6*')).toEqual(48);
-            expect(evaluatePostfix('62/5+')).toEqual(8);
-        });
-    });
+    //     it('can evaluate a more complicated expression', () => {
+    //         expect(evaluatePostfix('34+2*')).toEqual(14);
+    //         expect(evaluatePostfix('34*2/')).toEqual(6);
+    //         expect(evaluatePostfix('34-1+')).toEqual(0);
+    //         expect(evaluatePostfix('34/7-')).toEqual(-7);
+    //         expect(evaluatePostfix('35+6*')).toEqual(48);
+    //         expect(evaluatePostfix('62/5+')).toEqual(8);
+    //     });
+    // });
 });
