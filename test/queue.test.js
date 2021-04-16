@@ -101,4 +101,40 @@ describe("test queue implementation", () => {
         expect(q.toString()).toEqual('[40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200,210]');
     });
 
+    it('returns number of elements in queue', () => {
+        const q = new Queue();
+        q.enqueue(10);
+        q.enqueue(20);
+        q.enqueue(30);
+        q.enqueue(40);
+        q.enqueue(50);
+
+        expect(q.size()).toEqual(5);
+    });
+
+    it('returns zero on size if no elements in queue', () => {
+        const q = new Queue();
+        q.enqueue(10);
+        q.dequeue();
+
+        expect(q.size()).toEqual(0);
+    });
+
+    it('returns the first value in the queue without removing it', () => {
+        const q = new Queue();
+        q.enqueue(10);
+        q.enqueue(20);
+        q.enqueue(30);
+
+        expect(q.front()).toEqual(10);
+        expect(q.dequeue()).toEqual(10);
+    });
+
+    it('returns null for front if queue is empty', () => {
+        const q = new Queue();
+        q.enqueue(10);
+        q.dequeue();
+
+        expect(q.front()).toBeNull;
+    });
 });
